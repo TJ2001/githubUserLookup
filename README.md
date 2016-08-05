@@ -39,4 +39,4 @@ _Most coding was done in Javascript using JQuery and Gulp._
 
 *MIT license*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_TJ2001_**
