@@ -5,9 +5,10 @@ function User() {
 
 
 
-User.prototype.getInfo = function(username) {
+User.prototype.getInfo = function(username, displayFunction) {
   $.get("https://api.github.com/users/" + username + "?access_token=" + apiKey).then(function(response) {
-    $(".showName").html("Name: " + response.name);
+    displayFunction(username, response.name);
+    // $(".showName").html("Name: " + response.name);
     var actualNumber = response.public_repos - 1;
     $(".publicRepos").html("Number of Public Repos: " + actualNumber);
     var repoQuantity = response.public_repos;

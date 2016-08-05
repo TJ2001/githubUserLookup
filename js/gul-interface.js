@@ -20,7 +20,7 @@ $(document).ready(function() {
   $("form#githubUser").submit(function() {
     event.preventDefault();
     var username = $("#userName").val();
-    gitUser.getInfo(username);
+    gitUser.getInfo(username, displayName);
     // .then(gitUser.getRepo(username));
   });
 });
