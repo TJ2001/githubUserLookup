@@ -1,10 +1,13 @@
+var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
-  $('#weatherLocation').click(function() {
-    var city = $('#location').val();
-    $('#location').val("");
-    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
-      $('.showWeather').text("The humidity in " + city + " is " + response.main.humidity + "%");
+  $("form#githubUser").submit(function() {
+    event.preventDefault();
+    var username = $("#userName").val();
+      $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response) {
+      console.log(response);
+      console.log(response.name);
+      $('.showInfo').html(response.name);
     });
   });
 });
