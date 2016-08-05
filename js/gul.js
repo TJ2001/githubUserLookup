@@ -9,9 +9,10 @@ User.prototype.getInfo = function(username) {
     $(".publicRepos").html("Number of Public Repos: " + response.public_repos);
     var repoQuantity = response.public_repos;
     $.get("https://api.github.com/users/" + username + "/repos").then(function(repos){
+      console.log(repoQuantity)
       for (var i = 0; i < repoQuantity; i++) {
-        console.log(repoQuantity);
-        console.log(repos[i].name);
+        console.log(i);
+        $(".repos").append("<li>" + i + ". " + repos[i].name);
       }
     });
   });
