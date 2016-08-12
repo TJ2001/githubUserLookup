@@ -15,7 +15,10 @@ _This application enables the user to lookup information about Github users, spe
 * _Run NPM install via command console in GithubUserLookup folder._
 * _Run Bower install via command console in GithubUserLookup folder._
 * _If not already installed download Git from https://git-scm.com/downloads for easy application installation using Bash._
-
+* _User must provide own api-key for an .env file using text-editor of choice. Write the following script in the .env file._
+```
+exports.apiKey = "<put api key here>"
+```
 * Use the terminal to run the following command-line on Github bash:
 ```
 npm install; bower install; apm install atom-typescript; gulp build; gulp serve
