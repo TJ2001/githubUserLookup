@@ -8,7 +8,7 @@
 
 _This application enables the user to lookup information about Github users, specifically the name of the repositories and the quantity Github user has produced. Information should come out in an easy to read list format._
 
-## Setup/Installation Requirements
+## Installation Instructions/Requirements
 
 * _Download zip or clone git repository._
 * _Npm, Gulp, and Bower must be installed globally._
@@ -21,7 +21,6 @@ _This application enables the user to lookup information about Github users, spe
 npm install; bower install; apm install atom-typescript; gulp build; gulp serve
 ```
 * _Go to http://sass-lang.com/install and install Sass as well._
-* _Open index.html in Chrome._
 * _Enjoy._
 
 _If user has issues with installing NPM. Checkout: https://docs.npmjs.com/cli/install._<br />
