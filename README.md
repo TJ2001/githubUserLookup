@@ -6,21 +6,31 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application enables the user to lookup information about Github users, specifically the name of the repositories and the quantity Github user has produced. Information should come out in an easy to read list format._
 
 ## Setup/Installation Requirements
 
 * _Download zip or clone git repository._
+* _Npm, Gulp, and Bower must be installed globally._
 * _Run NPM install via command console in GithubUserLookup folder._
 * _Run Bower install via command console in GithubUserLookup folder._
-* _Open index.html via Chrome._
+* _If not already installed download Git from https://git-scm.com/downloads for easy application installation using Bash._
+
+* Use the terminal to run the following command-line on Github bash:
+```
+npm install; bower install; apm install atom-typescript; gulp build; gulp serve
+```
+* _Go to http://sass-lang.com/install and install Sass as well._
+* _Open index.html in Chrome._
 * _Enjoy._
 
-_Have a nice day._
+_If user has issues with installing NPM. Checkout: https://docs.npmjs.com/cli/install._<br />
+_If user has issues with installing Gulp. Checkout: https://travismaynard.com/writing/getting-started-with-gulp._<br />
+_If user has issues with installing Gulp. Checkout: http://blog.teamtreehouse.com/getting-started-bower._
 
 ## Known Bugs
 
-_For loop isn't working properly._
+_No known bugs at this time._
 
 ## Specifications
 
